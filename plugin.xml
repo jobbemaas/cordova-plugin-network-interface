@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-network-interface" version="0.0.15" 
+xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Network Interface</name>
+    <js-module name="NetworkInterface" src="www/NetworkInterface.js">
+        <clobbers target="networkInterface" />
+    </js-module>
+
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="NetworkInterface">
+                <param name="android-package"
+                       value="com.jobbemaas.plugin.NetworkInterface" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/com/jobbemaas/plugin/NetworkInterface.java"
+                     target-dir="src/com/jobbemaas/plugin" />
+    </platform>
+</plugin>

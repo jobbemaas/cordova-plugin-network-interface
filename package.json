@@ -1,0 +1,21 @@
+{
+  "name": "cordova-plugin-network-interface",
+  "version": "0.0.15",
+  "description": "Get the ip address and hostname of devices",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jobbemaas/cordova-plugin-network-interface"
+  },
+  "cordova": {
+    "id": "cordova-plugin-network-interface",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Jobbe Maas",
+  "license": "MIT"
+}
