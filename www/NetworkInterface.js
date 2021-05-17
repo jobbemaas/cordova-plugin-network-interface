@@ -4,7 +4,7 @@ function createGetIPAddress(funcName) {
 	return function(success, error) {
 		success = success || function(){};
 		error = error || function(){};
-		exec(success, error, 'NetworkInterface', funcName, []);
+		exec(success, error, 'NetworkInterface', funcName);
 	}
 }
 
@@ -12,7 +12,7 @@ function createGetHostName(funcName) {
 	return function(success, error) {
 		success = success || function(){};
 		error = error || function(){};
-		exec(success, error, 'NetworkInterface', funcName, []);
+		exec(success, error, 'NetworkInterface', funcName);
 	}
 }
 
